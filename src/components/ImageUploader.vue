@@ -106,7 +106,7 @@ export default defineComponent({
             hideClass: {
               popup: "animate__animated animate__fadeOutUp",
             },
-            timer: 2000, // Optional: auto-close after 2 seconds
+            timer: 3000, // Optional: auto-close after 2 seconds
             timerProgressBar: true, // Show progress bar for timer
           });
         }
@@ -167,7 +167,7 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 20px;
   overflow: hidden;
 }
