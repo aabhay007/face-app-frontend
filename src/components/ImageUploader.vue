@@ -2,7 +2,7 @@
   <div class="image-uploader">
     <!-- <div class="background-animation"></div> -->
     <div class="content">
-      <h1 class="title">Human Image Validation</h1>
+      <h1 class="title">Human Image Validator</h1>
       <p class="description">
         Upload an image to detect if it contains a human face. Drag and drop or click to select an image.
       </p>
