@@ -1,0 +1,123 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #4f46e5;
+  --secondary-color: #64748b;
+  --hover-color: #3b82f6;
+  --background-light: #ffffff;
+  --background-dark: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: var(--hover-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2d4cff);
+  background-size: 400% 400%;
+  animation: gradient-background 3s ease infinite;
+}
+
+@keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--background-light);
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.5);
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.6);
+}
+button:focus {
+  outline: 3px solid rgba(79, 70, 229, 0.8);
+  outline-offset: 2px;
+}
+
+.card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--secondary-color);
+    background-color: var(--background-light);
+  }
+  body {
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+  }
+  a:hover {
+    color: var(--hover-color);
+  }
+  button {
+    color: var(--primary-color);
+    background-color: var(--background-light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  button:hover {
+    background-color: #eef2ff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+}
