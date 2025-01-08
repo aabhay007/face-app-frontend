@@ -49,6 +49,7 @@ export default defineComponent({
     const clearImage = () => {
       image.value = null;
       imagePreview.value = '';
+      fileInput.value.value = '';
     };
 
     const onFileSelect = (event: Event) => {
@@ -167,7 +168,7 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* min-height: 100vh; */
+  min-height: 20vh; 
   padding: 20px;
   overflow: hidden;
 }
@@ -221,7 +222,7 @@ export default defineComponent({
 .drop-zone {
   width: 100%;
   max-width: 100%;
-  height: 500px;
+  height: 335px;
   border: 2px dashed #4f46e5;
   background: #eef2ff;
   display: flex;
@@ -293,7 +294,6 @@ button.clear:disabled {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
-  /* Semi-transparent background */
   display: flex;
   justify-content: center;
   align-items: center;
