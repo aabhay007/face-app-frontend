@@ -171,11 +171,13 @@
     border: 2px solid #ddd;
     border-radius: 8px;
     margin-bottom: 10px;
+    transform: scaleX(-1);
   }
   .capture-button,
   .upload-button,
   .clear-button {
     margin: 10px;
+    border: 2px solid #ddd;
   }
   .hidden {
     display: none;
@@ -184,6 +186,7 @@
     width: 100%;
     max-width: 300px;
     margin: 10px auto;
+    transform: scaleX(-1);
   }
   .loader-overlay {
   position: fixed;

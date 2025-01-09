@@ -64,6 +64,7 @@ export default defineComponent({
   cursor: pointer;
   background-color: #2d4cff;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid #ddd;
 }
 
 .toggle-buttons button.active {
